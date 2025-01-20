@@ -6,9 +6,9 @@ Resources:
       Role: !GetAtt GlueServiceRole.Arn
       Command:
         Name: glueetl
-        ScriptLocation: s3://tcs-edureka-data-engineering/code_pipeline_folder/script/aws_glue_script_amazon_json_transformation.py
+        ScriptLocation: s3://laxmana/codepipeline/glueScript/aws_glue_script_amazon_json_transformations.py
       DefaultArguments:
-        "--TempDir": "s3://tcs-edureka-data-engineering/code_pipeline_folder/temp/"
+        "--TempDir": "s3://laxmana/codepipeline/temp/"
       GlueVersion: "3.0"
       WorkerType: G.1X
       NumberOfWorkers: 2
