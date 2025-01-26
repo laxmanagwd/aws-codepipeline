@@ -6,7 +6,7 @@ Resources:
       Role: !GetAtt GlueServiceRole.Arn
       Command:
         Name: glueetl
-        ScriptLocation: s3://laxmana/codepipeline/glueScript/aws_glue_script_amazon_json_transformations.py
+        ScriptLocation: s3://laxmana/codepipeline/glueScript/pyspark-script.py
       DefaultArguments:
         "--TempDir": "s3://laxmana/codepipeline/temp/"
       GlueVersion: "3.0"
